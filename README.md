@@ -57,6 +57,15 @@ e.g. has lots of prompts and responses in a particular chat session
 - Prompt
 - Response
 
+**Best practices to avoid context pollution and context rot**
+
+- Keep chats focused and to the point
+- Keep context and prompts relevant
+- New task, new chat
+- Keep instructions files lean
+
+The goal is to provide the right and relevant context.
+
 ---
 
 ### Test agent instructions
