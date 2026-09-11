@@ -26,3 +26,11 @@ Bucks2Bar is a simple front-end app built with HTML and JavaScript. It is meant 
 ## Notes
 
 This is a starter project designed for learning and experimentation. It is intentionally simple so that the focus stays on understanding the fundamentals and using GitHub Copilot effectively.
+
+## Progress
+
+**Plan a project on GHC chat with plan mode prompt**
+
+```text
+This is a static HTML project called Bucks2Bar. We need a UI that displays income and expense inputs for January to December. The UI should containt two tabs, "Data" and "Chart". The Chart tab should display a bar chart using the income and expense values entered in the Data tab. The currency should be in Philippine Peso. Help me plan and build this project, including suggesting suitable UI and chart libraries.
+```
