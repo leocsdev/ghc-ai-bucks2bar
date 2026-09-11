@@ -37,6 +37,12 @@ Run the prompt:
 Add a download button above the chart that downloads the chart as png image.
 ```
 
+Add a username input and submit button
+
+```
+Above the data and chart tabs, in `@file:index.html`, render a username input which must contain at least 1 uppercase letter, 1 number, 1 special character, and must be at least 5 characters long. Underneath this input, render a submit button.
+```
+
 ---
 
 ### GitHub Copilot Agent Instructions

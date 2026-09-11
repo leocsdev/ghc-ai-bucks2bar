@@ -121,6 +121,19 @@ function downloadChartAsPng() {
   link.click();
 }
 
+const USERNAME_PATTERN = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{5,}$/;
+
+function isUsernameValid(username) {
+  return USERNAME_PATTERN.test(username);
+}
+
+function handleUsernameSubmit() {
+  const input = document.getElementById("username-input");
+  const isValid = isUsernameValid(input.value);
+  input.classList.toggle("is-invalid", !isValid);
+  input.classList.toggle("is-valid", isValid);
+}
+
 window.onload = function () {
   buildMonthRows();
   createChart();
@@ -130,4 +143,7 @@ window.onload = function () {
   document
     .getElementById("download-chart-btn")
     .addEventListener("click", downloadChartAsPng);
+  document
+    .getElementById("username-submit-btn")
+    .addEventListener("click", handleUsernameSubmit);
 };
