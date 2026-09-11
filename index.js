@@ -114,10 +114,20 @@ function updateChart() {
   chart.update();
 }
 
+function downloadChartAsPng() {
+  const link = document.createElement("a");
+  link.href = chart.toBase64Image();
+  link.download = "bucks2bar-chart.png";
+  link.click();
+}
+
 window.onload = function () {
   buildMonthRows();
   createChart();
   document
     .getElementById("chart-tab")
     .addEventListener("shown.bs.tab", updateChart);
+  document
+    .getElementById("download-chart-btn")
+    .addEventListener("click", downloadChartAsPng);
 };

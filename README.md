@@ -29,6 +29,14 @@ This is a starter project designed for learning and experimentation. It is inten
 
 ## Progress
 
+### Test agent instructions
+
+Run the prompt:
+
+```
+Add a download button above the chart that downloads the chart as png image.
+```
+
 ---
 
 ### GitHub Copilot Agent Instructions
