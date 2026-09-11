@@ -46,6 +46,17 @@ Context window consists of the ff
 - Irrelevant screenshots
 - Irrelevant documentation files
 
+**Context rot** is when the quality of the response gradually becomes less reliable as conversations grow and become more complicated
+
+e.g. has lots of prompts and responses in a particular chat session
+
+- Prompt
+- Response
+- Prompt
+- Response
+- Prompt
+- Response
+
 ---
 
 ### Test agent instructions
