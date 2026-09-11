@@ -29,6 +29,12 @@ This is a starter project designed for learning and experimentation. It is inten
 
 ## Progress
 
+### Security, permissions, and prompt injections
+
+**Prompt injection** is when an ai model reads untrusted content that contains instructions designed to manipulate its behavior.
+
+Always set permission to Default permissions
+
 ### Context Window
 
 **Context window** is the amount of information an LLM can process at one time.
