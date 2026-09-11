@@ -29,6 +29,51 @@ This is a starter project designed for learning and experimentation. It is inten
 
 ## Progress
 
+### Security, permissions, and prompt injections
+
+**Prompt injection** is when an ai model reads untrusted content that contains instructions designed to manipulate its behavior.
+
+Always set permission to Default permissions
+
+### Context Window
+
+**Context window** is the amount of information an LLM can process at one time.
+
+Context window consists of the ff
+
+- Rules/Instructions
+- Tool definitions
+- Any files attached to a chat
+- The prompt itself
+- The response
+
+**Context pollution** is the unnecessary, irrelevant, outdated or conflicting information gets added to the context.
+
+- Irrelevant screenshots
+- Irrelevant documentation files
+
+**Context rot** is when the quality of the response gradually becomes less reliable as conversations grow and become more complicated
+
+e.g. has lots of prompts and responses in a particular chat session
+
+- Prompt
+- Response
+- Prompt
+- Response
+- Prompt
+- Response
+
+**Best practices to avoid context pollution and context rot**
+
+- Keep chats focused and to the point
+- Keep context and prompts relevant
+- New task, new chat
+- Keep instructions files lean
+
+The goal is to provide the right and relevant context.
+
+---
+
 ### Test agent instructions
 
 Run the prompt:
