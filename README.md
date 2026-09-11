@@ -29,6 +29,20 @@ This is a starter project designed for learning and experimentation. It is inten
 
 ## Progress
 
+### Context Window
+
+**Context window** is the amount of information an LLM can process at one time.
+
+Context window consists of the ff
+
+- Rules/Instructions
+- Tool definitions
+- Any files attached to a chat
+- The prompt itself
+- The response
+
+---
+
 ### Test agent instructions
 
 Run the prompt:
