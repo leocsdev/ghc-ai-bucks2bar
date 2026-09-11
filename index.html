@@ -13,6 +13,28 @@
     <div class="container py-4">
       <h1 class="mb-4">Bucks2Bar</h1>
 
+      <div class="mb-4">
+        <label for="username-input" class="form-label">Username</label>
+        <input
+          type="text"
+          class="form-control"
+          id="username-input"
+          placeholder="Enter username"
+        />
+        <div class="invalid-feedback" id="username-feedback">
+          Must be at least 5 characters long and include 1 uppercase letter, 1
+          number, and 1 special character.
+        </div>
+        <button
+          type="button"
+          id="username-submit-btn"
+          class="btn text-white mt-2"
+          style="background-color: deeppink"
+        >
+          Submit
+        </button>
+      </div>
+
       <ul class="nav nav-tabs" id="bucks2bar-tabs" role="tablist">
         <li class="nav-item" role="presentation">
           <button
@@ -73,6 +95,16 @@
           role="tabpanel"
           aria-labelledby="chart-tab"
         >
+          <div class="d-flex justify-content-end mb-2">
+            <button
+              type="button"
+              id="download-chart-btn"
+              class="btn text-white"
+              style="background-color: deeppink"
+            >
+              Download
+            </button>
+          </div>
           <div style="min-height: 400px">
             <canvas id="bucks2bar-chart" height="100"></canvas>
           </div>

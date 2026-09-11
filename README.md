@@ -29,6 +29,47 @@ This is a starter project designed for learning and experimentation. It is inten
 
 ## Progress
 
+### Test agent instructions
+
+Run the prompt:
+
+```
+Add a download button above the chart that downloads the chart as png image.
+```
+
+Add a username input and submit button
+
+```
+Above the data and chart tabs, in `@file:index.html`, render a username input which must contain at least 1 uppercase letter, 1 number, 1 special character, and must be at least 5 characters long. Underneath this input, render a submit button.
+```
+
+---
+
+### GitHub Copilot Agent Instructions
+
+Agent instructions are markdown files that contain persistent rules or guidelines that GH Copilot should follow across all of the chat sessions.
+
+**Creating agent instructions file**
+
+- in the chat, type `/create-instructions`
+- Then type this prompt
+  ```
+  Create a general instructions file for this project. Also include that all buttons must have a pink background color.
+  ```
+- Or you can create this manually by creating `.github` directory in your project root folder. Then create the `copilot-instructions.md` file and add the instructions.
+
+**Create custom instructions files**
+
+- Create a new folder `instructions` inside the `.github` directory
+- From there, create a new instruction file, e.g. database instruction file. It should be named `database.instructions.md`
+  - The directory structure for this instruction should be `.github/instructions/database.instructions.md`
+
+**AGENTS.md**
+
+This is another generic way to attach instructions. It behaves exactly like the `copilot-instructions.md` file and specifically designed for GC Copilot. `AGENTS.md` is a more generic convention that’s supported by multiple AI coding agents.
+
+---
+
 **Plan a project on GHC chat with plan mode prompt**
 
 ```text
