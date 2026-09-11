@@ -41,6 +41,11 @@ Context window consists of the ff
 - The prompt itself
 - The response
 
+**Context pollution** is the unnecessary, irrelevant, outdated or conflicting information gets added to the context.
+
+- Irrelevant screenshots
+- Irrelevant documentation files
+
 ---
 
 ### Test agent instructions
