@@ -147,3 +147,15 @@ window.onload = function () {
     .getElementById("username-submit-btn")
     .addEventListener("click", handleUsernameSubmit);
 };
+
+// exposed for Jest; no-op in the browser
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = {
+    MONTHS,
+    currencyFormatter,
+    buildMonthRows,
+    getMonthlyData,
+    isUsernameValid,
+    handleUsernameSubmit,
+  };
+}

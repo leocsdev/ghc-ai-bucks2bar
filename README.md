@@ -29,6 +29,12 @@ This is a starter project designed for learning and experimentation. It is inten
 
 ## Progress
 
+### Setup and create unit tests
+
+- `/setupTests` — scaffolds a testing framework/config for the project (here it resulted in jest.config.js and the test script + jest/jest-environment-jsdom devDependencies in package.json).
+
+- `/tests` — generates test files for existing code (here it produced index.test.js for index.js).
+
 ### Security, permissions, and prompt injections
 
 **Prompt injection** is when an ai model reads untrusted content that contains instructions designed to manipulate its behavior.
